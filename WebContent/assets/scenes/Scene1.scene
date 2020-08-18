@@ -1,0 +1,112 @@
+{
+  "-app": "Scene Editor - Phaser Editor v2.1.8",
+  "-version": 1,
+  "compilerLang": "JAVA_SCRIPT_6",
+  "displayList": {
+    "-id": "8d715559-399d-42e9-9525-4a1dc0336b31",
+    "-type": "DisplayList",
+    "children": [
+      {
+        "-id": "49cc8dfe-4066-4eb0-8c09-30b3520e161f",
+        "-type": "Image",
+        "children": [],
+        "variableName": "cat",
+        "variableField": true,
+        "x": 200,
+        "y": 200,
+        "scaleX": 0.30000001192092896,
+        "scaleY": 0.30000001192092896,
+        "textureKey": "textures",
+        "textureFrame": "cat"
+      },
+      {
+        "-id": "91a1c161-c7a2-425b-ad47-03536daff279",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE",
+        "variableField": true,
+        "x": 298.6961975097656,
+        "y": 222.1378936767578,
+        "scaleX": 0.10000000149011612,
+        "scaleY": 2.0999999046325684,
+        "textureKey": "textures",
+        "textureFrame": "plat"
+      },
+      {
+        "-id": "afeb71bf-dfd5-4d32-a223-d4934e632b04",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE_1",
+        "variableField": true,
+        "x": 105.04581451416016,
+        "y": 301.3540344238281,
+        "scaleX": 0.10000000149011612,
+        "scaleY": 3,
+        "textureKey": "textures",
+        "textureFrame": "plat"
+      },
+      {
+        "-id": "f72a7722-ad79-4b53-a1ad-175a66229d9c",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE_2",
+        "variableField": true,
+        "x": 626.63720703125,
+        "y": 394.7498474121094,
+        "scaleY": 0.30000001192092896,
+        "textureKey": "textures",
+        "textureFrame": "plat"
+      },
+      {
+        "-id": "5fbb98e7-8f6d-448f-b1a3-a4c708eb523f",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE_3",
+        "variableField": true,
+        "x": 592.88037109375,
+        "y": 582.1327514648438,
+        "scaleX": 1.7000000476837158,
+        "scaleY": 0.30000001192092896,
+        "textureKey": "textures",
+        "textureFrame": "plat"
+      },
+      {
+        "-id": "443dbfe6-542d-485c-9634-fb5127379f1e",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE_4",
+        "variableField": true,
+        "x": 1078.72412109375,
+        "y": 304.99481201171875,
+        "scaleX": 0.10000000149011612,
+        "scaleY": 3,
+        "textureKey": "textures",
+        "textureFrame": "plat"
+      },
+      {
+        "-id": "cd2d2000-82a8-4f19-9656-257090cb6006",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE_5",
+        "variableField": true,
+        "x": 893.9246215820312,
+        "y": 203.6754608154297,
+        "scaleX": 0.10000000149011612,
+        "scaleY": 2.0999999046325684,
+        "textureKey": "textures",
+        "textureFrame": "plat"
+      }
+    ]
+  },
+  "groups": {
+    "-id": "89eecac1-e75a-4225-a3ba-7ac59572410e",
+    "-type": "Groups",
+    "children": []
+  },
+  "backgroundColor": "159,221,191",
+  "borderWidth": 1920,
+  "borderHeight": 1080,
+  "createMethodName": "_create",
+  "methodContextType": "SCENE",
+  "sceneKey": "Scene1"
+}

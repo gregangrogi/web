@@ -2,7 +2,7 @@
   "version": 3,
   "files": [
     "WebContent/assets/sprites/cat.png",
-    "WebContent/assets/sprites/SPIKE.png"
+    "WebContent/assets/sprites/plat.png"
   ],
   "settings": {
     "pot": false,
@@ -47,29 +47,7 @@
       "trimmed": true,
       "rotated": false,
       "frame": {
-        "x": 204,
-        "y": 153,
-        "w": 100,
-        "h": 100
-      },
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 100
-      },
-      "sourceSize": {
-        "w": 100,
-        "h": 100
-      },
-      "name": "SPIKE",
-      "regionIndex": -1
-    },
-    {
-      "trimmed": true,
-      "rotated": false,
-      "frame": {
-        "x": 2,
+        "x": 604,
         "y": 2,
         "w": 200,
         "h": 251
@@ -85,6 +63,28 @@
         "h": 251
       },
       "name": "cat",
+      "regionIndex": -1
+    },
+    {
+      "trimmed": true,
+      "rotated": false,
+      "frame": {
+        "x": 2,
+        "y": 53,
+        "w": 600,
+        "h": 200
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 600,
+        "h": 200
+      },
+      "sourceSize": {
+        "w": 600,
+        "h": 200
+      },
+      "name": "plat",
       "regionIndex": -1
     }
   ]}]

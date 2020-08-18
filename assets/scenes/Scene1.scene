@@ -12,8 +12,8 @@
         "children": [],
         "variableName": "cat",
         "variableField": true,
-        "x": 312,
-        "y": 226,
+        "x": 200,
+        "y": 200,
         "scaleX": 0.30000001192092896,
         "scaleY": 0.30000001192092896,
         "textureKey": "textures",
@@ -25,12 +25,25 @@
         "children": [],
         "variableName": "SPIKE",
         "variableField": true,
-        "x": 809.369140625,
-        "y": 228.25660705566406,
-        "scaleX": 0.30000001192092896,
-        "scaleY": 0.30000001192092896,
+        "x": 310.3598937988281,
+        "y": 247.0641632080078,
+        "scaleX": 0.10000000149011612,
+        "scaleY": 2,
         "textureKey": "textures",
-        "textureFrame": "SPIKE"
+        "textureFrame": "plat"
+      },
+      {
+        "-id": "afeb71bf-dfd5-4d32-a223-d4934e632b04",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE_1",
+        "variableField": true,
+        "x": 101.5064926147461,
+        "y": 250.6943817138672,
+        "scaleX": 0.10000000149011612,
+        "scaleY": 2,
+        "textureKey": "textures",
+        "textureFrame": "plat"
       }
     ]
   },

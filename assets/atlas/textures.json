@@ -1,0 +1,53 @@
+{
+  "textures": [{
+    "image": "textures.png",
+    "frames": [
+      {
+        "filename": "SPIKE",
+        "trimmed": true,
+        "rotated": false,
+        "frame": {
+          "x": 204,
+          "y": 153,
+          "w": 100,
+          "h": 100
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100
+        },
+        "sourceSize": {
+          "w": 100,
+          "h": 100
+        }
+      },
+      {
+        "filename": "cat",
+        "trimmed": true,
+        "rotated": false,
+        "frame": {
+          "x": 2,
+          "y": 2,
+          "w": 200,
+          "h": 251
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0,
+          "w": 200,
+          "h": 251
+        },
+        "sourceSize": {
+          "w": 200,
+          "h": 251
+        }
+      }
+    ]
+  }],
+  "meta": {
+    "app": "Phaser Editor - Atlas Generator",
+    "version": "2"
+  }
+}

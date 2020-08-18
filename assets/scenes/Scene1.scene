@@ -1,0 +1,48 @@
+{
+  "-app": "Scene Editor - Phaser Editor v2.1.8",
+  "-version": 1,
+  "compilerLang": "JAVA_SCRIPT_6",
+  "displayList": {
+    "-id": "8d715559-399d-42e9-9525-4a1dc0336b31",
+    "-type": "DisplayList",
+    "children": [
+      {
+        "-id": "49cc8dfe-4066-4eb0-8c09-30b3520e161f",
+        "-type": "Image",
+        "children": [],
+        "variableName": "cat",
+        "variableField": true,
+        "x": 312,
+        "y": 226,
+        "scaleX": 0.30000001192092896,
+        "scaleY": 0.30000001192092896,
+        "textureKey": "textures",
+        "textureFrame": "cat"
+      },
+      {
+        "-id": "91a1c161-c7a2-425b-ad47-03536daff279",
+        "-type": "Image",
+        "children": [],
+        "variableName": "SPIKE",
+        "variableField": true,
+        "x": 809.369140625,
+        "y": 228.25660705566406,
+        "scaleX": 0.30000001192092896,
+        "scaleY": 0.30000001192092896,
+        "textureKey": "textures",
+        "textureFrame": "SPIKE"
+      }
+    ]
+  },
+  "groups": {
+    "-id": "89eecac1-e75a-4225-a3ba-7ac59572410e",
+    "-type": "Groups",
+    "children": []
+  },
+  "backgroundColor": "159,221,191",
+  "borderWidth": 1920,
+  "borderHeight": 1080,
+  "createMethodName": "_create",
+  "methodContextType": "SCENE",
+  "sceneKey": "Scene1"
+}

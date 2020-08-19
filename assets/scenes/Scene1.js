@@ -43,11 +43,11 @@ class Scene1 extends Phaser.Scene {
 		var SPIKE_7 = this.add.image(960.0, 1080.0, "textures", "plat");
 		SPIKE_7.setScale(3.2, 0.3);
 		
-		var SPIKE_8 = this.add.image(960.0, 2160.0, "textures", "plat");
+		var SPIKE_8 = this.add.image(960.0, 3240.0, "textures", "plat");
 		SPIKE_8.setScale(3.2, 0.3);
 		
-		var SPIKE_9 = this.add.image(73.32293, 1622.5181, "textures", "plat");
-		SPIKE_9.setScale(0.1, 5.5);
+		var SPIKE_9 = this.add.image(83.32738, 2162.6467, "textures", "plat");
+		SPIKE_9.setScale(0.1, 11.0);
 		
 		var SPIKE_10 = this.add.image(600.1697, 1704.0768, "textures", "plat");
 		SPIKE_10.setScale(1.7, 0.3);
@@ -67,6 +67,27 @@ class Scene1 extends Phaser.Scene {
 		var finish_1 = this.add.image(1174.2463, 2038.708, "textures", "finish");
 		finish_1.setScale(0.3, 0.3);
 		
+		var SPIKE_15 = this.add.image(960.0, 2160.0, "textures", "plat");
+		SPIKE_15.setScale(3.2, 0.3);
+		
+		var SPIKE_16 = this.add.image(391.79785, 2472.004, "textures", "plat");
+		SPIKE_16.setScale(0.1, 3.0);
+		
+		var red = this.add.image(976.6178, 2859.2192, "textures", "red");
+		red.setScale(0.3, 1.3);
+		
+		var SPIKE_17 = this.add.image(881.6593, 2748.351, "textures", "plat");
+		SPIKE_17.setScale(1.7, 0.3);
+		
+		var SPIKE_18 = this.add.image(1896.8704, 2134.5452, "textures", "plat");
+		SPIKE_18.setScale(0.1, 11.0);
+		
+		var red_1 = this.add.image(983.77936, 2293.6672, "textures", "red");
+		red_1.setScale(0.3, 1.3);
+		
+		var finish_2 = this.add.image(628.0719, 2452.4917, "textures", "finish");
+		finish_2.setScale(0.3, 0.3);
+		
 		this.fCat = cat;
 		this.fSPIKE = SPIKE;
 		this.fSPIKE_1 = SPIKE_1;
@@ -85,8 +106,22 @@ class Scene1 extends Phaser.Scene {
 		this.fSPIKE_13 = SPIKE_13;
 		this.fSPIKE_14 = SPIKE_14;
 		this.fFinish_1 = finish_1;
+		this.fSPIKE_15 = SPIKE_15;
+		this.fSPIKE_16 = SPIKE_16;
+		this.fRed = red;
+		this.fSPIKE_17 = SPIKE_17;
+		this.fSPIKE_18 = SPIKE_18;
+		this.fRed_1 = red_1;
+		this.fFinish_2 = finish_2;
 		
 	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -111,15 +146,23 @@ class Scene1 extends Phaser.Scene {
 	create() {
 		this._create();
 		this.arrows = this.input.keyboard.createCursorKeys();
-		this.kills = [this.fSPIKE, this.fSPIKE, this.fSPIKE_1, this.fSPIKE_2, 
+		this.kills = [this.fRed, this.fRed_1, this.fSPIKE, this.fSPIKE, this.fSPIKE_1, this.fSPIKE_2, 
 		this.fSPIKE_3, this.fSPIKE_4, this.fSPIKE_5, this.fSPIKE_6, this.fSPIKE_7, 
-		this.fSPIKE_8, this.fSPIKE_9, this.fSPIKE_10, this.fSPIKE_12, this.fSPIKE_13,
-		this.fSPIKE_14]
+		this.fSPIKE_8, this.fSPIKE_9, this.fSPIKE_10, this.fSPIKE_11, this.fSPIKE_12, 
+		this.fSPIKE_13, this.fSPIKE_14, this.fSPIKE_15, this.fSPIKE_16,
+		this.fSPIKE_17, this.fSPIKE_18]
+		this.ud = [this.fRed]
 		this.physics.add.existing(this.fCat);
 		this.physics.add.existing(this.fFinish);
+		this.physics.add.existing(this.fFinish_1);
+		this.physics.add.existing(this.fFinish_2);
 		this.physics.add.overlap(this.fCat, this.fFinish, this.win, null, this);
+		this.physics.add.overlap(this.fCat, this.fFinish_1, this.win, null, this);
+		this.physics.add.overlap(this.fCat, this.fFinish_2, this.win, null, this);		
+		this.up =1;
+		this.util1 = 0;
 		let i = 0;
-		while (i < 15) { 
+		while (i < 21) { 
   			
   			i++;
 			this.physics.add.existing(this.kills[i-1]);
@@ -156,7 +199,13 @@ class Scene1 extends Phaser.Scene {
 			this.fSPIKE_13.y -= 1080; 
 			this.fSPIKE_14.y -= 1080; 
 			this.fFinish_1.y -= 1080;
-		
+			this.fSPIKE_15.y -= 1080; 
+			this.fSPIKE_16.y -= 1080;
+			this.fSPIKE_17.y -= 1080; 
+			this.fSPIKE_18.y -= 1080; 
+			this.fRed.y -= 1080; 
+			this.fRed_1.y -= 1080;
+			this.fFinish_2.y -= 1080; 
 	}
 	update() {
 		if (this.arrows.right.isDown){
@@ -172,6 +221,14 @@ class Scene1 extends Phaser.Scene {
 			this.fCat.y -= 4;
 		}
 		
+		this.util1+= 1;
+		if (this.util1 > 100){
+			this.util1 = 0;
+			this.up = -this.up;
+		}
+		let i = 0;
+		this.fRed.y += this.up * 4;
+		this.fRed_1.y += this.up * 4;
 	}
 		
 	

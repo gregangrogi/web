@@ -3,7 +3,8 @@
   "files": [
     "WebContent/assets/sprites/cat.png",
     "WebContent/assets/sprites/plat.png",
-    "WebContent/assets/sprites/finish.png"
+    "WebContent/assets/sprites/finish.png",
+    "WebContent/assets/sprites/red.png"
   ],
   "settings": {
     "pot": false,
@@ -49,7 +50,7 @@
       "rotated": false,
       "frame": {
         "x": 604,
-        "y": 2,
+        "y": 153,
         "w": 200,
         "h": 251
       },
@@ -70,8 +71,8 @@
       "trimmed": true,
       "rotated": false,
       "frame": {
-        "x": 806,
-        "y": 53,
+        "x": 2,
+        "y": 2,
         "w": 200,
         "h": 200
       },
@@ -93,7 +94,7 @@
       "rotated": false,
       "frame": {
         "x": 2,
-        "y": 53,
+        "y": 204,
         "w": 600,
         "h": 200
       },
@@ -108,6 +109,28 @@
         "h": 200
       },
       "name": "plat",
+      "regionIndex": -1
+    },
+    {
+      "trimmed": true,
+      "rotated": false,
+      "frame": {
+        "x": 204,
+        "y": 2,
+        "w": 200,
+        "h": 200
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 200
+      },
+      "name": "red",
       "regionIndex": -1
     }
   ]}]

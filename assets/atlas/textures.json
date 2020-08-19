@@ -24,6 +24,27 @@
         }
       },
       {
+        "filename": "finish",
+        "trimmed": true,
+        "rotated": false,
+        "frame": {
+          "x": 806,
+          "y": 53,
+          "w": 200,
+          "h": 200
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0,
+          "w": 200,
+          "h": 200
+        },
+        "sourceSize": {
+          "w": 200,
+          "h": 200
+        }
+      },
+      {
         "filename": "plat",
         "trimmed": true,
         "rotated": false,

@@ -2,7 +2,8 @@
   "version": 3,
   "files": [
     "WebContent/assets/sprites/cat.png",
-    "WebContent/assets/sprites/plat.png"
+    "WebContent/assets/sprites/plat.png",
+    "WebContent/assets/sprites/finish.png"
   ],
   "settings": {
     "pot": false,
@@ -63,6 +64,28 @@
         "h": 251
       },
       "name": "cat",
+      "regionIndex": -1
+    },
+    {
+      "trimmed": true,
+      "rotated": false,
+      "frame": {
+        "x": 806,
+        "y": 53,
+        "w": 200,
+        "h": 200
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 200
+      },
+      "name": "finish",
       "regionIndex": -1
     },
     {

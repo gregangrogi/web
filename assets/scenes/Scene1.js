@@ -46,8 +46,8 @@ class Scene1 extends Phaser.Scene {
 		var SPIKE_8 = this.add.image(960.0, 3240.0, "textures", "plat");
 		SPIKE_8.setScale(3.2, 0.3);
 		
-		var SPIKE_9 = this.add.image(83.32738, 2162.6467, "textures", "plat");
-		SPIKE_9.setScale(0.1, 11.0);
+		var SPIKE_9 = this.add.image(83.32738, 3240.0, "textures", "plat");
+		SPIKE_9.setScale(0.1, 22.0);
 		
 		var SPIKE_10 = this.add.image(600.1697, 1704.0768, "textures", "plat");
 		SPIKE_10.setScale(1.7, 0.3);
@@ -79,14 +79,56 @@ class Scene1 extends Phaser.Scene {
 		var SPIKE_17 = this.add.image(881.6593, 2748.351, "textures", "plat");
 		SPIKE_17.setScale(1.7, 0.3);
 		
-		var SPIKE_18 = this.add.image(1896.8704, 2134.5452, "textures", "plat");
-		SPIKE_18.setScale(0.1, 11.0);
+		var SPIKE_18 = this.add.image(1896.8704, 3240.0, "textures", "plat");
+		SPIKE_18.setScale(0.1, 22.0);
 		
 		var red_1 = this.add.image(983.77936, 2293.6672, "textures", "red");
 		red_1.setScale(0.3, 1.3);
 		
 		var finish_2 = this.add.image(628.0719, 2452.4917, "textures", "finish");
 		finish_2.setScale(0.3, 0.3);
+		
+		var SPIKE_19 = this.add.image(960.0, 4320.0, "textures", "plat");
+		SPIKE_19.setScale(3.2, 0.3);
+		
+		var SPIKE_20 = this.add.image(960.0, 5400.0, "textures", "plat");
+		SPIKE_20.setScale(3.2, 0.3);
+		
+		var SPIKE_21 = this.add.image(395.70654, 3694.0112, "textures", "plat");
+		SPIKE_21.setScale(0.1, 4.3);
+		
+		var SPIKE_23 = this.add.image(623.40063, 3949.3167, "textures", "plat");
+		SPIKE_23.setScale(0.8, 0.3);
+		
+		var SPIKE_24 = this.add.image(628.55347, 4225.196, "textures", "plat");
+		SPIKE_24.setScale(0.1, 1.0);
+		
+		var SPIKE_25 = this.add.image(832.70154, 3927.8455, "textures", "plat");
+		SPIKE_25.setScale(0.1, 2.0);
+		
+		var SPIKE_22 = this.add.image(1063.51, 4095.4106, "textures", "plat");
+		SPIKE_22.setScale(0.8, 0.3);
+		
+		var SPIKE_26 = this.add.image(1546.4601, 4113.275, "textures", "plat");
+		SPIKE_26.setScale(0.1, 2.0);
+		
+		var SPIKE_27 = this.add.image(1327.9408, 3901.128, "textures", "plat");
+		SPIKE_27.setScale(0.8, 0.3);
+		
+		var SPIKE_28 = this.add.image(1128.9559, 3715.1023, "textures", "plat");
+		SPIKE_28.setScale(0.1, 2.0);
+		
+		var SPIKE_29 = this.add.image(629.86176, 3649.892, "textures", "plat");
+		SPIKE_29.setScale(0.1, 1.5);
+		
+		var SPIKE_30 = this.add.image(900.5985, 3535.608, "textures", "plat");
+		SPIKE_30.setScale(0.8, 0.3);
+		
+		var red_2 = this.add.image(1221.4174, 3939.5208, "textures", "red");
+		red_2.setScale(0.3, 1.0);
+		
+		var finish_3 = this.add.image(1727.9949, 4133.4106, "textures", "finish");
+		finish_3.setScale(0.3, 0.3);
 		
 		this.fCat = cat;
 		this.fSPIKE = SPIKE;
@@ -113,8 +155,36 @@ class Scene1 extends Phaser.Scene {
 		this.fSPIKE_18 = SPIKE_18;
 		this.fRed_1 = red_1;
 		this.fFinish_2 = finish_2;
+		this.fSPIKE_19 = SPIKE_19;
+		this.fSPIKE_20 = SPIKE_20;
+		this.fSPIKE_21 = SPIKE_21;
+		this.fSPIKE_23 = SPIKE_23;
+		this.fSPIKE_24 = SPIKE_24;
+		this.fSPIKE_25 = SPIKE_25;
+		this.fSPIKE_22 = SPIKE_22;
+		this.fSPIKE_26 = SPIKE_26;
+		this.fSPIKE_27 = SPIKE_27;
+		this.fSPIKE_28 = SPIKE_28;
+		this.fSPIKE_29 = SPIKE_29;
+		this.fSPIKE_30 = SPIKE_30;
+		this.fRed_2 = red_2;
+		this.fFinish_3 = finish_3;
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -146,23 +216,28 @@ class Scene1 extends Phaser.Scene {
 	create() {
 		this._create();
 		this.arrows = this.input.keyboard.createCursorKeys();
-		this.kills = [this.fRed, this.fRed_1, this.fSPIKE, this.fSPIKE, this.fSPIKE_1, this.fSPIKE_2, 
+		this.kills = [this.fRed, this.fRed_1, this.fRed_2, this.fSPIKE, this.fSPIKE, this.fSPIKE_1, this.fSPIKE_2, 
 		this.fSPIKE_3, this.fSPIKE_4, this.fSPIKE_5, this.fSPIKE_6, this.fSPIKE_7, 
 		this.fSPIKE_8, this.fSPIKE_9, this.fSPIKE_10, this.fSPIKE_11, this.fSPIKE_12, 
 		this.fSPIKE_13, this.fSPIKE_14, this.fSPIKE_15, this.fSPIKE_16,
-		this.fSPIKE_17, this.fSPIKE_18]
+		this.fSPIKE_17, this.fSPIKE_18, this.fSPIKE_19, this.fSPIKE_20, this.fSPIKE_21, 
+		this.fSPIKE_22, this.fSPIKE_23, this.fSPIKE_24, this.fSPIKE_25, this.fSPIKE_26, 
+		this.fSPIKE_27, this.fSPIKE_28, this.fSPIKE_29, this.fSPIKE_30,]
 		this.ud = [this.fRed]
 		this.physics.add.existing(this.fCat);
 		this.physics.add.existing(this.fFinish);
 		this.physics.add.existing(this.fFinish_1);
 		this.physics.add.existing(this.fFinish_2);
+		this.physics.add.existing(this.fFinish_3);
 		this.physics.add.overlap(this.fCat, this.fFinish, this.win, null, this);
 		this.physics.add.overlap(this.fCat, this.fFinish_1, this.win, null, this);
-		this.physics.add.overlap(this.fCat, this.fFinish_2, this.win, null, this);		
-		this.up =1;
+		this.physics.add.overlap(this.fCat, this.fFinish_2, this.win, null, this);	
+		this.physics.add.overlap(this.fCat, this.fFinish_3, this.win, null, this);	
+		this.up = 1;
 		this.util1 = 0;
+		this.level = 1;
 		let i = 0;
-		while (i < 21) { 
+		while (i < 35) { 
   			
   			i++;
 			this.physics.add.existing(this.kills[i-1]);
@@ -178,6 +253,8 @@ class Scene1 extends Phaser.Scene {
 		
 	}
 	win (){
+		this.level += 1;
+		
 		this.fCat.x = 200;
 		this.fCat.y = 200;
 		
@@ -199,13 +276,27 @@ class Scene1 extends Phaser.Scene {
 			this.fSPIKE_13.y -= 1080; 
 			this.fSPIKE_14.y -= 1080; 
 			this.fFinish_1.y -= 1080;
+			this.fFinish_2.y -= 1080; 
+			this.fFinish_3.y -= 1080; 
 			this.fSPIKE_15.y -= 1080; 
 			this.fSPIKE_16.y -= 1080;
 			this.fSPIKE_17.y -= 1080; 
 			this.fSPIKE_18.y -= 1080; 
 			this.fRed.y -= 1080; 
 			this.fRed_1.y -= 1080;
-			this.fFinish_2.y -= 1080; 
+			this.fRed_2.y -= 1080;
+			this.fSPIKE_19.y -= 1080;
+			this.fSPIKE_20.y -= 1080;
+			this.fSPIKE_21.y -= 1080; 
+			this.fSPIKE_22.y -= 1080; 
+			this.fSPIKE_23.y -= 1080;
+			this.fSPIKE_24.y -= 1080;
+			this.fSPIKE_25.y -= 1080;
+			this.fSPIKE_26.y -= 1080; 
+			this.fSPIKE_27.y -= 1080; 
+			this.fSPIKE_28.y -= 1080;
+			this.fSPIKE_29.y -= 1080;
+			this.fSPIKE_30.y -= 1080;
 	}
 	update() {
 		if (this.arrows.right.isDown){
@@ -229,6 +320,7 @@ class Scene1 extends Phaser.Scene {
 		let i = 0;
 		this.fRed.y += this.up * 4;
 		this.fRed_1.y += this.up * 4;
+		this.fRed_2.y += this.up * 4;
 	}
 		
 	

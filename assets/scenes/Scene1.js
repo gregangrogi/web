@@ -130,6 +130,7 @@ class Scene1 extends Phaser.Scene {
 		var finish_3 = this.add.image(1727.9949, 4133.4106, "textures", "finish");
 		finish_3.setScale(0.3, 0.3);
 		
+		
 		this.fCat = cat;
 		this.fSPIKE = SPIKE;
 		this.fSPIKE_1 = SPIKE_1;
@@ -172,48 +173,11 @@ class Scene1 extends Phaser.Scene {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/* START-USER-CODE */
 
 	create() {
+		this.pl1 = this.add.image(200.0, 200.0, "textures", "cat");
+		this.pl1.setScale(0.3, 0.3);
 		this._create();
 		this.arrows = this.input.keyboard.createCursorKeys();
 		this.kills = [this.fRed, this.fRed_1, this.fRed_2, this.fSPIKE, this.fSPIKE, this.fSPIKE_1, this.fSPIKE_2, 
@@ -236,12 +200,14 @@ class Scene1 extends Phaser.Scene {
 		this.up = 1;
 		this.util1 = 0;
 		this.level = 1;
+		this.createtext();
 		let i = 0;
 		while (i < 35) { 
   			
   			i++;
 			this.physics.add.existing(this.kills[i-1]);
 			this.physics.add.overlap(this.fCat, this.kills[i-1], this.hit, null, this);
+		
 		}
 		
 		
@@ -254,6 +220,7 @@ class Scene1 extends Phaser.Scene {
 	}
 	win (){
 		this.level += 1;
+		this.leveltext.setText("level" + this.level);
 		
 		this.fCat.x = 200;
 		this.fCat.y = 200;
@@ -296,7 +263,15 @@ class Scene1 extends Phaser.Scene {
 			this.fSPIKE_27.y -= 1080; 
 			this.fSPIKE_28.y -= 1080;
 			this.fSPIKE_29.y -= 1080;
-			this.fSPIKE_30.y -= 1080;
+			
+	}
+	createtext(){
+		var style = {font: '50px Arial', fill: '#FFF'};
+		this.leveltext = this.add.text(50, 50, "level" + this.level, style)
+	}
+	multiplay(pl, x, y){
+		pl.x = x;
+		pl.y = y;
 	}
 	update() {
 		if (this.arrows.right.isDown){
